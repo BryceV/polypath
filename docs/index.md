@@ -10,6 +10,7 @@ There are two things that administrators can do that the typical user cannot do:
 # Class diagrams
 
 # Course outcome (screen shots)
+ <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png"> <br>
 ![PPLogIn](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png)<br>
 ![PPFlowchart](https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png)<br>
 ![PPSideBar](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png)<br>
