@@ -1,15 +1,22 @@
 # How to run Poly Path
+
 # How to set up an administrator account
+
 # How to use the administrator functionalities 
+There are two things that administrators can do that the typical user cannot do:
+* They can publish offical catalog flowcharts by creating/editing on of their flowcharts, clicking on the gear in the top right corner, and selecting  "publish flowchart". This will push it into a special database that other users can query. 
+* They can view json representation of the course demand of specific quarters. It can be accessed by going to api/analytics/quarters/{id}
+
 # Class diagrams
-# Course outcome
-![](https://drive.google.com/open?id=0B5t5Y2nBB7ejR09lazltN21KMGc)
-![](https://drive.google.com/open?id=0B5t5Y2nBB7ejLWNTOGxnSEVMd00)
-![](https://drive.google.com/open?id=0B5t5Y2nBB7ejQTZTX2J2eF9lamM)
-![](https://drive.google.com/open?id=0B5t5Y2nBB7ejQXd3VnhnYk9JSTQ)
-![](https://drive.google.com/open?id=0B5t5Y2nBB7ejbEFWN0JlbGUyM0U)
-![](https://drive.google.com/open?id=0B5t5Y2nBB7ejX1dRQlZrWU9DUkE)
-![]()
-![]()
+
+# Course outcome (screen shots)
+![](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png)<br>
+![](https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png)<br>
+![](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png)<br>
+![](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png)<br>
+![](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png)<br>
+![](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png)<br>
+
 # Best things about Poly Path
+
 # Key learnings 
