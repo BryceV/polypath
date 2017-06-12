@@ -10,12 +10,12 @@ There are two things that administrators can do that the typical user cannot do:
 # Class diagrams
 
 # Course outcome (screen shots)
-![](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png)<br>
-![](https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png)<br>
-![](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png)<br>
-![](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png)<br>
-![](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png)<br>
-![](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png)<br>
+![PPLogIn](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png)<br>
+![PPFlowchart](https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png)<br>
+![PPSideBar](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png)<br>
+![PPCourseSearc](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png)<br>
+![PPAdminGear](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png)<br>
+![PPAnalytics](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png)<br>
 
 # Best things about Poly Path
 
