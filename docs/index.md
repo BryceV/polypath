@@ -84,4 +84,15 @@
   <h3> 
     <strong>Key learnings</strong>
   </h3> 
+  <P>
+    <li>
+      Devops Tools:
+        <ol>
+          GitHub
+        </ol>
+        <ol>
+          TravisCI 
+        </ol>
+    </li>
+  </p>
 </div>  
