@@ -4,23 +4,23 @@
 </p>
  
 <div>
-<h3>Poly Path:</h3>
-<h4>Created for Efficiency and Usability</h4>
-   <li>
-    Currently the Office of Registrar has to manally build the 200+ official flowcharts that contain Cal Poly's 64  major/concentration combinations. 
-   </li>
-   <li>
+  <h3>Poly Path:</h3>
+  <h4>Created for Efficiency and Usability</h4>
+  <li>
+    Currently the Office of Registrar has to manally build the 200+ official flowcharts that contain Cal Poly's 64     major/concentration combinations. 
+  </li>
+  <li>
     The office of Registrar manually creates these 200+ flowcharts in Excel every three years when a new Academic Catalogue is introduced.
-   </li>
-   <li>
+  </li>
+  <li>
      <strong>With Poly Planner, the Office of Registrar</strong>
-   </li 
-   <li>
-      Easily build new Official flowcharts from scratch or leverage existing official flowcharts.
-    </li
-    </li>
-      Perform basic data analytics and see the number of students taking a particular class in any given quarter
-    </li>
+  </li 
+  <li>
+    Easily build new Official flowcharts from scratch or leverage existing official flowcharts.
+  </li>
+  <li>
+    Perform basic data analytics and see the number of students taking a particular class in any given quarter
+  </li>
 </div>
 
 <div>
@@ -28,7 +28,9 @@
 </div>
 
 <div>
-  <h3> How to use the administrator functionalities </h3>
+  <h3> 
+    <strong>How to use the administrator functionalities </strong>
+  </h3>
   <p> 
     There are two things that administrators can do that the typical user cannot do:
     <li>
@@ -36,8 +38,8 @@
     </li>
     <li>
       They can view json representation of the course demand of specific quarters. It can be accessed by going to api/analytics/quarters/{id}
-    </li>
-    </p>
+    </li> 
+  </p>
 </div>    
 
 <div>
