@@ -23,18 +23,26 @@
 </div>
 
 <div>
-  <h3> How to set up an administrator account</h3>
+  <h3> 
+    <strong> How to set up an administrator account</strong>
+  </h3>
 </div>
 
 <div>
   <h3> 
-    <strong>How to use the administrator functionalities </strong>
+    <strong> How to use the administrator functionalities </strong>
   </h3>
   <p> 
-    There are two things that administrators can do that the typical user cannot do:
-      * They can publish offical catalog flowcharts by creating/editing on of their flowcharts, clicking on the gear in the top right corner, and selecting  "publish flowchart". This will push it into a special database that other users can query. 
-      * They can view json representation of the course demand of specific quarters. It can be accessed by going to api/analytics/quarters/{id} 
-  </p>
+    <li>
+      There are two things that administrators can do that the typical user cannot do:
+        <li>
+          They can publish offical catalog flowcharts by creating/editing on of their flowcharts, clicking on the gear in the           top right corner, and selecting  "publish flowchart". This will push it into a special database that other users can           query.
+        </li>
+        <li>
+          They can view json representation of the course demand of specific quarters. It can be accessed by going to                   api/analytics/quarters/{id} 
+        </li>
+   </li>
+ </p>
 </div>    
 
 <div>
