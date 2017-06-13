@@ -22,16 +22,17 @@
   <h3> 
     <strong>How to use the administrator functionalities</strong>
   </h3>
+  
   <ul>
   There are two things that administrators can do that the typical user cannot do:   
          <li> 
          They can publish offical catalog flowcharts by creating/editing on of their flowcharts, clicking on the gear in the           top right corner, and selecting  "publish flowchart". This will push it into a special database that other users can query.
-        </li>
-        
+        </li>        
         <li>
           They can view json representation of the course demand of specific quarters. It can be accessed by going to                   api/analytics/quarters/{id} 
         </li>
    </ul>
+   
 </div>    
 
 <div>
@@ -58,12 +59,10 @@
    <ul>
     <li>
       Currently the Office of Registrar has to manally build 200+ official flowcharts in Excel every two years when a new Academic Catalogue is released. But now, with Poly Path, publishing official flowcharts is as easy as a few clicks. With quick access to a full course catalog, administrators can add/remove classes, drop and drag courses to their proper order, and release the new flowcharts. 
-    </li>
-    
+    </li>    
     <li>
     These edited flowcharts are instantly available to be seen or used as a template for any user. Which gives many options for department heads to share flowcharts with the Registrar, or students to share their flowcharts with councilors to get advice. The possibilities are endless. 
-    </li>
-    
+    </li>    
     <li>
      Admins can perform basic data analytics and see the number of students taking a particular class in any given quarter. This provides an excellent visual tool to plan course demand every quarter
    </li> 
@@ -75,9 +74,13 @@
     <strong>Key learnings</strong>
   </h3>
   
-     Devops Tools:
   <ul>
-     <li>GitHub</li>
-     <li>TravisCI </li>
+     <li>Devoper Tools: GitHub, Travis CI, Maven, CheckStyle, Heroku, Sonarqube</li>
+     <li>Agile Software Development </li>
+     <li>Continuous Integration and Continuous Delivery Procedures</li>
+     <li>Software Architecture</li>
+     <li>DevOps</li>
+     <li>Usability Testing and Heuristic Evaluations</li>
+      <li>Unit Testing</li>
   </ul>
 </div>  
