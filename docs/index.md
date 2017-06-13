@@ -82,5 +82,6 @@
      <li>DevOps</li>
      <li>Usability Testing and Heuristic Evaluations</li>
      <li>Unit Testing</li>
+     <li>Software Design Patterns</li>
   </ul>
 </div>  
