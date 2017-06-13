@@ -26,6 +26,12 @@
   <h3> 
     <strong> How to set up an administrator account</strong>
   </h3>
+  <li>
+    There is currently no process to create an administrator account.
+  </li>
+  <li>
+    Provided admin account email: staff@calpoly.edu password: staff
+  </li>
 </div>
 
 <div>
