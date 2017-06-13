@@ -51,7 +51,7 @@
 
 <div>
   <h3> 
-  <strong>Course outcome (screen shots)</strong>
+    <strong>Course outcomes (screen shots)</strong>
   </h3>
     <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png">  
     <li>
@@ -60,13 +60,24 @@
     <li>
       ![PPFlowchart](https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png)
     </li>  
-    ![PPSideBar](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png)<br>
-    ![PPCourseSearc](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png)<br>
-    ![PPAdminGear](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png)<br>
-    ![PPAnalytics](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png)<br>
+    <li>
+      ![PPSideBar](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png)
+    </li>
+    <li>
+      ![PPCourseSearc](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png
+    </li>
+    <li>!
+      [PPAdminGear](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png)
+    </li>
+    <li>
+      ![PPAnalytics](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png)
+    </li>
 </div>
+
 <div>
-  <h4> Best things about Poly Path </h4>
+  <h3> 
+    <strong>Best things about Poly Path</strong> 
+  </h3>
 </div>
 
 <div>
