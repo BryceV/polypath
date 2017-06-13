@@ -1,12 +1,25 @@
 # Poly Path
-<p> Poly path was created by Michel Crivello, Jonathan Pautz, Matthew Jimenez, Miguel Duran, and Bryce Vonilten in the Winter and Spring quarters of the 2016-17 Academic school year at Cal Poly San Luis Obispo. The two quarter sequence is Cal Poly's Software Engineering I (CSC 308) and Software Engineering II CSC(309) and was taught by Professor Salome Gudrun Socher, who was a visiting professor from the Univeristy of Munich Applied Sciences. Professor Socher both brought a very realistic stakeholder, who was the office of Registrar, and a professional approach to developing Software a various stages of the Software Lifecycle.</p>
+<p> 
+  Poly path was created by Michel Crivello, Jonathan Pautz, Matthew Jimenez, Miguel Duran, and Bryce Vonilten in the Winter   and Spring quarters of the 2016-17 Academic school year at Cal Poly San Luis Obispo. The two quarter sequence is Cal Poly's Software Engineering I (CSC 308) and Software Engineering II CSC(309) and was taught by Professor Salome Gudrun Socher, who was a visiting professor from the Univeristy of Munich Applied Sciences. Professor Socher both brought a very realistic stakeholder, who was the office of Registrar, and a professional approach to developing Software a various stages of the Software Lifecycle.
+</p>
  
-# Poly Path: Created for Efficiency and Usability
-* Currently the Office of Registrar has to manally build the 200+ official flowcharts that contain Cal Poly's 64 major/concentration combinations. 
-* The office of Registrar manually creates these 200+ flowcharts in Excel every three years when a new Academic Catalogue is introduced.
 <div>
-  <p>
-    With Poly Planner, the Office of Registrar 
+   <h3>Poly Path: Created for Efficiency and Usability</h3>
+   <li>
+    Currently the Office of Registrar has to manally build the 200+ official flowcharts that contain Cal Poly's 64  major/concentration combinations. 
+   </li>
+   <li>
+    The office of Registrar manually creates these 200+ flowcharts in Excel every three years when a new Academic Catalogue is introduced.
+   </li>
+   <li>
+     <strong>With Poly Planner, the Office of Registrar</strong>
+   </li 
+   <li>
+      Easily build new Official flowcharts from scratch or leverage existing official flowcharts.
+    </li
+    </li>
+      Perform basic data analytics and see the number of students taking a particular class in any given quarter
+    </li>
   </p>
 </div>
 # How to set up an administrator account
