@@ -8,63 +8,54 @@
   <h3> 
     <strong> How to set up an administrator account</strong>
   </h3>
-  <li>
-    There is currently no process to create an administrator account.
-  </li>
-  <li>
-    Provided admin account email: staff@calpoly.edu password: staff
-  </li>
+  <ul>
+    <li>
+      There is currently no process to create an administrator account.
+    </li>
+    <li>
+      Provided admin account email: staff@calpoly.edu password: staff
+    </li>
+  </ul>
 </div>
 
 <div>
   <h3> 
     <strong>How to use the administrator functionalities</strong>
   </h3>
-    <li>
-      There are two things that administrators can do that the typical user cannot do:
-        <li>
-          They can publish offical catalog flowcharts by creating/editing on of their flowcharts, clicking on the gear in the           top right corner, and selecting  "publish flowchart". This will push it into a special database that other users can           query.
+  <ul>
+  There are two things that administrators can do that the typical user cannot do:   
+         <li> 
+         They can publish offical catalog flowcharts by creating/editing on of their flowcharts, clicking on the gear in the           top right corner, and selecting  "publish flowchart". This will push it into a special database that other users can query.
         </li>
+        
         <li>
           They can view json representation of the course demand of specific quarters. It can be accessed by going to                   api/analytics/quarters/{id} 
         </li>
-   </li>
+   </ul>
 </div>    
 
 <div>
   <h3> 
   <strong>Class diagrams</strong>
   </h3>
-    ![PPClassDiagram](https://github.com/cpe308-309/polypath/blob/master/docs/ClassDiagram/Updated_Class_Diagram.png)
+   <img src="https://github.com/cpe308-309/polypath/blob/master/docs/ClassDiagram/Updated_Class_Diagram.png">
 </div>  
 
 <div>
   <h3> 
     <strong>Course outcomes (screen shots)</strong>
-  </h3>
-  
-    <li>
+  </h3> 
       <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png"> 
-    </li>
-    <li>
       <img src="https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png">
-    </li>  
-    <li>
       <img src="(https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png">
-    </li>
-    <li>
-       <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png">
-    </li>
-    <li>!
-     <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png">
-    </li>
-    <li>
-       <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png">
-    </li>
+      <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png">
+      <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png">
+      <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png">
 </div>
 
 <div>
    <h4>The things that Poly Path does the best</h4>
+   <ul>
     <li>
       Currently the Office of Registrar has to manally build 200+ official flowcharts in Excel every two years when a new Academic Catalogue is released. But now, with Poly Path, publishing official flowcharts is as easy as a few clicks. With quick access to a full course catalog, administrators can add/remove classes, drop and drag courses to their proper order, and release the new flowcharts. 
     </li>
@@ -75,22 +66,18 @@
     
     <li>
      Admins can perform basic data analytics and see the number of students taking a particular class in any given quarter. This provides an excellent visual tool to plan course demand every quarter
-   </li>  
+   </li> 
+   </ul>
 </div>
 
 <div>
   <h3> 
     <strong>Key learnings</strong>
-  </h3> 
-  <P>
-    <li>
-      Devops Tools:
-        <ol>
-          GitHub
-        </ol>
-        <ol>
-          TravisCI 
-        </ol>
-    </li>
-  </p>
+  </h3>
+  
+     Devops Tools:
+  <ul>
+     <li>GitHub</li>
+     <li>TravisCI </li>
+  </ul>
 </div>  
