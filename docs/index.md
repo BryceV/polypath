@@ -46,12 +46,12 @@
   <h3> 
     <strong>Course outcomes (screen shots)</strong>
   </h3> 
-      <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.PNG"><br>
-      <img src="https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png"><br>
-      <img src="(https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png"><br>
-      <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png"><br>
-      <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png"><br>
-      <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png">v
+      <img src="http://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.PNG"><br>
+      <img src="http://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png"><br>
+      <img src="http://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png"><br>
+      <img src="http://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png"><br>
+      <img src="http://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png"><br>
+      <img src="http://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png">v
 </div>
 
 <div>
