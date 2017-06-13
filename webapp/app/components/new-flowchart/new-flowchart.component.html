@@ -1,0 +1,16 @@
+<form>
+<md-input-container class="w-100 mt-4">
+  <input #name [hidden]="loading" mdInput placeholder="Flowchart Name">
+</md-input-container>
+
+<md-select class="w-100 mt-4" placeholder="Major" [(ngModel)]="selectedFlowchartId" name="major">
+  <md-option>None</md-option>
+  <md-option *ngFor="let flowchart of flowcharts" [value]="flowchart.id">
+    {{ flowchart.name }}
+  </md-option>
+</md-select>
+
+<div class="text-center">
+  <button class="w-50 mt-4 mb-2" md-button (click)="dialogRef.close({name: name.value, flowchartId: selectedFlowchartId})">New Flowchart</button>
+</div>
+</form>

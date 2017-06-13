@@ -3,14 +3,20 @@
     <div>
       <h1 class="logo-name">PolyPath</h1>
     </div>
-    <form class="m-t" role="form" (ngSubmit)="onSubmit()">
+    <form class="m-t" role="form" #loginform="ngForm" (ngSubmit)="onSubmit()">
+
       <div class="form-group">
-        <input autofocus type="email" class="form-control" placeholder="Username" [(ngModel)]="data.username" name="username">
+        <input [class.invalid]="invalidCredentials" autofocus type="email" #userRef="ngModel" class="form-control mt-2" placeholder="Username" [(ngModel)]="data.username" name="username">
+
+        <input [class.invalid]="invalidCredentials" type="password" #passRef="ngModel" class="form-control mt-2" placeholder="Password" [(ngModel)]="data.password" name="password">
+
+        <!--Michael, this is what needs to work.-->
+        <div *ngIf="invalidCredentials" class="alert alert-danger mt-2">Incorrect Username/Password. Please try again</div>
+
+      <button md-raised-button [disabled]="loading" class="full-width mt-3" type="submit" style="background-color: beige">
+        Login
+      </button>
       </div>
-      <div class="form-group">
-        <input type="password" class="form-control" placeholder="Password" [(ngModel)]="data.password" name="password">
-      </div>
-      <button md-raised-button [disabled]="loading" class="full-width" type="submit">Login</button>
     </form>
   </div>
 </div>

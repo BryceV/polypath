@@ -1,6 +1,6 @@
 import {NgModule, Optional, SkipSelf} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MdButtonModule, MdDialog, MdDialogModule, MdSidenavModule} from '@angular/material';
+import {MdButtonModule, MdDialog, MdDialogModule, MdSelectModule, MdSidenavModule} from '@angular/material';
 
 
 import { LoggerService } from './logger.service';
@@ -10,6 +10,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { throwIfAlreadyLoaded } from './module-import-guard';
 import { SideNavComponent } from './sidenav/sidenav.component';
 import {CourseSearchComponent} from "../components/course-search/course-search.component";
+import {MdButtonToggleModule} from '@angular/material';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {MdAutocompleteModule} from '@angular/material';
+import {MdInputModule} from '@angular/material';
+import {ReactiveFormsModule} from '@angular/forms';
+
+
+
 
 
 @NgModule({
@@ -18,14 +26,25 @@ import {CourseSearchComponent} from "../components/course-search/course-search.c
     MdSidenavModule,
     MdButtonModule,
     MdDialogModule,
+    MdButtonToggleModule,
+    MdAutocompleteModule,
+    MdInputModule,
+    ReactiveFormsModule,
+    MdSelectModule,
+    NgbModule
   ],
   exports: [
+    SideNavComponent,
     NavbarComponent,
     SpinnerComponent,
-    SideNavComponent,
     MdSidenavModule,
     MdButtonModule,
+    MdButtonToggleModule,
     CourseSearchComponent,
+    MdAutocompleteModule,
+    MdSelectModule,
+    ReactiveFormsModule,
+    MdInputModule
   ],
   declarations: [
     NavbarComponent,

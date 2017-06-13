@@ -1,23 +1,41 @@
-<div class="container-fluid text-center search-result" >
-  <div class="row">
-    <h4>Course Search</h4>
-  </div>
-  <div class="row mt-3">
-    <input #searchBox class="w-75" (keyup)="search(searchBox.value)"/>
-  </div>
-
-  <!--<div *ngFor="let course of courses | async"-->
-       <!--class="search-result"-->
-       <!--(click)="onCourseSelected(course)">-->
-    <!--{{course.department.prefix}} {{course.number}} : {{course.title}}-->
+<!--<div class="container-fluid search-result" >-->
+  <!--<div class="row text-center container-fluid course-search-title">-->
+    <!--<h4>Course Search</h4>-->
   <!--</div>-->
-  <div class="row">
-    <ul class="list-group mt-3">
-    <li *ngFor="let course of courses | async"
-         class="list-group-item"
-         (click)="dialogRef.close(course)">
-      {{course.department.prefix}} {{course.number}} : {{course.title}}
-    </li>
-    </ul>
+  <!--<div class="row mt-3 mx-auto">-->
+    <!--<input #searchBox id="search-box" (keyup)="search(searchBox.value)"/>-->
+  <!--</div>-->
+
+  <!--<div class="row">-->
+    <!--<ul class="list-group mt-3">-->
+    <!--<li *ngFor="let course of courses | async"-->
+         <!--class="list-group-item"-->
+         <!--(click)="dialogRef.close(course)">-->
+      <!--{{course.department.prefix}} {{course.number}} : {{course.title}}-->
+    <!--</li>-->
+    <!--</ul>-->
+  <!--</div>-->
+<!--</div>-->
+<div class="container-fluid" style="width: 60vw; max-width: 600px">
+<ng-template #empty>
+  <div class="d-flex justify-content-center">
+    No Classes Loaded
   </div>
+</ng-template>
+
+<div *ngIf="!loading; else empty" class="w-90">
+  <md-input-container class="w-100">
+    <input mdInput placeholder="Search For Course" [mdAutocomplete]="auto" [formControl]="courseCtrl" (keyup)="onKeyUp($event)">
+  </md-input-container>
+
+  <md-autocomplete #auto="mdAutocomplete" [displayWith]="courseName" >
+    <md-option *ngFor="let course of filteredCourses | async"
+               [value]="course"
+               (onSelectionChange)="onSelectionChange($event, course)"
+               (onSelect)="onSelectCourse()">
+      {{course.department.prefix}} {{course.number}}: {{course.title}}
+    </md-option>
+  </md-autocomplete>
 </div>
+</div>
+

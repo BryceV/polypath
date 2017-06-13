@@ -2,12 +2,11 @@ package base.flowchart;
 
 import base.security.user.CurrentUser;
 import base.user.User;
-import javassist.tools.web.BadHttpRequest;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/")
@@ -32,16 +31,15 @@ public class FlowchartController {
     }
 
     @RequestMapping(method= RequestMethod.POST, value="flowcharts")
-    public void addFlowchart(@CurrentUser User user) {
-        if (user != null) {
-            // create new empty flowchart for current user
-            flowchartService.addFlowchart(user);
-        }
+    public Flowchart addFlowchart(@CurrentUser User user, @RequestBody Map<String, String> attributes) {
+        String name = attributes.get("name");
+        String flowchartId = attributes.get("templateId");
+        return flowchartService.addFlowchart(user, name, flowchartId);
     }
 
     @RequestMapping(method=RequestMethod.PUT, value="flowcharts/{id}")
-    public void updateFlowchart(@PathVariable Long id, @RequestBody Flowchart flowchart) {
-        flowchartService.updateFlowchart(id, flowchart);
+    public void updateFlowchart(@PathVariable Long id, @RequestBody Map<String, String> flowchartAttributes) {
+        flowchartService.updateFlowchart(id, flowchartAttributes);
     }
 
     @RequestMapping(method=RequestMethod.DELETE, value="flowcharts/{id}")
@@ -49,4 +47,13 @@ public class FlowchartController {
         flowchartService.deleteFlowchart(id);
     }
 
+    @RequestMapping(method = RequestMethod.PUT, value = "flowcharts/{id}/publish")
+    public void publishFlowchart(@PathVariable Long id, @RequestBody String markOfficial) {
+      flowchartService.publishFlowchart(id, Boolean.parseBoolean(markOfficial));
+    }
+
+    @RequestMapping("flowcharts/official")
+    public List<FlowchartCompact> getOfficialFlowcharts(){
+      return flowchartService.getOfficialFlowcharts();
+    }
 }

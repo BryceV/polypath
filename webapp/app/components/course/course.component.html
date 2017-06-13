@@ -1,18 +1,23 @@
-<div class = "d-flex flex-column roundcorners">
-  <div *ngIf="entry"  class="d-flex justify-content-end">
-    <button md-button
-            class="md-small"
-            style="z-index: 1"
-            (click)="onCourseRemove(entry)">
+<div *ngIf="entry" class="d-flex center flex-column roundcorners" [style.background-color]="entry.color ? entry.color : 'white'">
+    <div    class="pull-left pl-2 icon"
+            style="z-index: 1; left: 0; padding-top: 2px; padding-left: 2px"
+            (click)="onColorChange()">
+      <i class="fa fa-paint-brush fa-fw"></i>
+    </div>
+    <div  class="pull-right pr-2 icon"
+          style="z-index: 1; right: 0; padding-top: 2px; padding-right: 2px"
+         (click)="onCourseRemove()">
       X
-    </button>
-  </div>
-  <div class="text-center">
+    </div>
+  <div class="text-center" (click)="onClick()">
     <!-- ({{entry.course.id}}) -->
     <div >
+      <b>
       {{entry.course.department.prefix}}
       {{entry.course.number}}
-      {{entry.course.title}}
+      </b>
+      <br>
+      {{entry.course.title | truncate: 30}}
     </div>
   </div>
 </div>

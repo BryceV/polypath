@@ -5,7 +5,7 @@
   clear: both;
   display: inline-table;
   width: 250px;
-  height: 600px;
+  min-height: 490px;
 
   text-align: center;
   padding: 10px;
@@ -30,3 +30,24 @@
   clear: both;
 }
 
+.card-footer {
+  background: #FFE395;
+}
+.card-title {
+  font-size: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+hr {
+  #height: 5px;
+  border-top: 2px double #000000;
+
+}
+
+.card-block {
+  min-height: 490px;
+  position: relative;
+}
+
+.quarter-content {
+  min-height: 700px;
+}

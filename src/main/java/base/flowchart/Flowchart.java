@@ -1,8 +1,11 @@
 package base.flowchart;
 
 import base.entry.Entry;
+import base.quarter.Quarter;
 import base.user.User;
-import com.fasterxml.jackson.annotation.*;
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
 import java.util.List;
@@ -21,7 +24,7 @@ public class Flowchart {
     @JoinColumn(name = "user_id")
     @JsonIgnoreProperties("flowcharts")
     @JsonIdentityReference(alwaysAsId = true)
-    @JsonProperty("user_id")
+    @JsonProperty("userId")
     private User user;
 
     @JsonIgnoreProperties("flowchart")
@@ -30,11 +33,22 @@ public class Flowchart {
 //    @JsonIdentityReference(alwaysAsId = true)
     private List<Entry> entries;
 
+    @OneToOne
+    private Quarter firstQuarter;
+
+    @OneToOne
+    private Quarter lastQuarter;
+
+//    @JsonIgnore
+    private boolean isOfficial = false;
+
     public Flowchart(){}
 
-    public Flowchart(User user, String name) {
+    public Flowchart(User user, String name, Quarter start, Quarter end) {
         this.user = user;
         this.name = name;
+        this.firstQuarter = start;
+        this.lastQuarter = end;
     }
 
     public Flowchart(Flowchart flowchart) {
@@ -42,6 +56,8 @@ public class Flowchart {
         this.name = flowchart.name;
         this.user = flowchart.user;
         this.entries = flowchart.entries;
+        this.firstQuarter = flowchart.firstQuarter;
+        this.lastQuarter = flowchart.lastQuarter;
     }
 
     public Long getId() {
@@ -74,5 +90,29 @@ public class Flowchart {
 
     public void setEntries(List<Entry> entries) {
         this.entries = entries;
+    }
+
+    public Quarter getFirstQuarter() {
+      return firstQuarter;
+    }
+
+    public void setFirstQuarter(Quarter firstQuarter) {
+      this.firstQuarter = firstQuarter;
+    }
+
+    public Quarter getLastQuarter() {
+      return lastQuarter;
+    }
+
+    public void setLastQuarter(Quarter lastQuarter) {
+      this.lastQuarter = lastQuarter;
+    }
+
+    public boolean isOfficial() {
+      return isOfficial;
+    }
+
+    public void setOfficial(boolean official) {
+      isOfficial = official;
     }
 }

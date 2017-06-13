@@ -2,6 +2,7 @@ package base.quarter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 @RestController
@@ -34,6 +35,12 @@ public class QuarterController {
     @RequestMapping(method=RequestMethod.DELETE, value="quarters/{id}")
     public void deleteQuarter(@PathVariable Long id) {
         quarterService.deleteQuarter(id);
+    }
+
+    @RequestMapping("analytics/quarters/{id}")
+    public QuarterAnalytics getQuarterAnalytics(@PathVariable Long id)
+    {
+      return quarterService.getQuarterAnalytics(id);
     }
 
 }

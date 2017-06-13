@@ -1,6 +1,5 @@
 .sidebar-container {
   width: 500px;
-  height: 300px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   background-color: transparent;
 }
@@ -25,24 +24,35 @@
 
 .sidenav {
   width: 300px;
+  background-color: rgb(254, 255, 248);
+  height: 100%;
 }
 
 .sidenav-title{
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 500;
   padding-top: 20px;
 }
 
-.sidenav-button {
-  width: 250px;
+h4, h5 {
+  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.sidenav hr {
+  #height: 5px;
+  border-top: 2px double #003831;
+
 }
 
 .navbar-title {
-  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+  text-align: left;
 }
 
 .button-padding {
   margin: 5px 5px 5px 5px;
   position: relative;
-  background-color: #9eb28f;
 }
 
 .courseSearch
@@ -60,4 +70,17 @@
 {
   background-color: transparent;
 }
+
+.sidenav-button {
+  width: 250px;
+  border-radius: 10px;
+  /*background-color: #fff7e0;*/
+}
+
+.activeButton {
+  /*background-color: #f7deb5;*/
+  background-color: #fff7e0;
+
+}
+
 

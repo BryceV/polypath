@@ -23,7 +23,7 @@ public class DepartmentService {
     }
 
     public Department getDepartmentByName(String prefix) {
-        return departmentRepository.findDeparmentByPrefix(prefix);
+        return departmentRepository.findDeparmentByPrefixIgnoreCase(prefix);
     }
 
     public void addDepartment(Department department)

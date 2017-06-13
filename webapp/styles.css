@@ -2,9 +2,26 @@
 
 /*TODO: Make CalPoly theme*/
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,900');
+
 
 /*TODO: Add custom font, but be aware of Bootstrap potentially overriding it*/
 
 .mat-button.md-small {
   min-width: 1px;
+}
+
+.mat-sidenav-content {
+  background-color: white;
+}
+
+
+.mat-button {
+
+}
+button.mat-button {
+  font-family: 'Exo 2', sans-serif;
+}
+button.mat-raised-button {
+  font-family: 'Exo 2', sans-serif;
 }

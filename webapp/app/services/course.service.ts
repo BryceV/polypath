@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Course } from "../../models/course.model"
+import { Course } from "../models/course.model"
 import { Http } from "@angular/http";
 import 'rxjs/add/operator/toPromise';
 import {toPromise} from "rxjs/operator/toPromise";
+import {isNullOrUndefined} from 'util';
+import {isEmpty} from 'rxjs/operator/isEmpty';
 
 @Injectable()
 export class CourseService {
@@ -12,7 +14,7 @@ export class CourseService {
   getCourses(): Promise<Course[]> {
     return this.http.get("api/courses")
       .toPromise()
-      .then(response => response.json().data as Course[])
+      .then(response => response.json() as Course[])
       .catch(this.handleError);
   }
 
@@ -20,7 +22,6 @@ export class CourseService {
     return this.http.get(`api/courses/${id}`)
       .toPromise()
       .then(response => {
-        //console.log(response.json());
         return response.json() as Course;}
       )
       .catch(this.handleError);

@@ -1,14 +1,12 @@
 package base.entry;
 
 import base.course.Course;
-import base.course.CourseService;
 import base.flowchart.Flowchart;
-import base.flowchart.FlowchartService;
 import base.quarter.Quarter;
-import base.quarter.QuarterService;
-import com.fasterxml.jackson.annotation.*;
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 
@@ -16,6 +14,7 @@ import javax.persistence.*;
 //@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, resolver = SimpleObjectIdResolver.class,
 //        property = "id", scope=Entry.class)
 @JsonDeserialize(using = EntryDeserializer.class)
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class Entry {
 
     @Id
@@ -40,6 +39,8 @@ public class Entry {
 //    @JsonIdentityReference(alwaysAsId = true)
     private Quarter quarter;
 
+    private String color;
+
     public Entry(){
 
     }
@@ -49,6 +50,13 @@ public class Entry {
         this.flowchart = flowchart;
         this.quarter = quarter;
     }
+
+  public Entry(Course course, Flowchart flowchart, Quarter quarter, String color) {
+    this.course = course;
+    this.flowchart = flowchart;
+    this.quarter = quarter;
+    this.color = color;
+  }
 
     public Entry(Entry entry) {
         this.id = entry.id;
@@ -88,4 +96,8 @@ public class Entry {
     public void setQuarter(Quarter quarter) {
         this.quarter = quarter;
     }
+
+  public String getColor() {
+    return color;
+  }
 }

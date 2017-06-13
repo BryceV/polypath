@@ -11,6 +11,9 @@ import org.springframework.stereotype.Component;
 @SpringBootApplication
 public class Application {
 
+  // TODO: This should be stored in the DB
+  public static final String CURRENT_YEAR_AND_TERM = "FALL2016";
+
   public static void main(String[] args) {
       SpringApplication.run(Application.class, args);
     }

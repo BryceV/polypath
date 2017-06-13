@@ -1,26 +1,31 @@
 .polypath-navbar {
-  background-color: #9eb28f;
   padding: .2em 1em;
 }
 .navbar-title {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #323232;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 24pt;
+  #text-transform: uppercase;
+  margin-left: 15px;
   display: inline-block;
   vertical-align: middle;
 }
+
 .logo {
   padding: 8px;
 }
 .logo-img {
-  height: 45px;
-  width: 90px;
+  height: 80px;
+  width: 80px;
   display: inline-block;
   vertical-align: middle;
-  background: url("../../../assets/grad_cap.svg") no-repeat center center;
-  background-size: contain;
+
+  /*background: url("../../../assets/PPLogo_NoFill.png") no-repeat center center;*/
+  /*background: url("../../../assets/grad_cap.svg") no-repeat center center;*/
+  background-size: cover;
   margin-top: 10px;
-  margin-right: -10px;
+
+  margin-right: 0px;
+  margin-left: 15px;
 }
 
 .gray {
@@ -32,3 +37,22 @@
   /*Every toolbar row uses a flexbox row layout.*/
   flex: 1 1 auto;
 }
+
+.p-3 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15pt;
+}
+
+.md-button {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 15pt;
+}
+
+.fa-navicon {
+  float: left;
+  margin-left: 13px;
+  margin-top: 10px;
+}
+
+

@@ -1,6 +1,5 @@
 package base.entry;
 
-import base.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,35 +29,8 @@ public class EntryService {
 
     public void updateEntry(Long id, Entry entry)
     {
-        Entry temp = entryRepository.findOne(id);
-        if(entry == null) {
-            return;
-        }
-        else {
-            //Entry
-            temp.setId(entry.getId());
-            //Course
-            temp.getCourse().setId(entry.getCourse().getId());
-            temp.getCourse().setNumber(entry.getCourse().getNumber());
-            temp.getCourse().setTitle(entry.getCourse().getTitle());
-            //Course -> Department
-            temp.getCourse().getDepartment().setId(entry.getCourse().getDepartment().getId());
-            temp.getCourse().getDepartment().setPrefix(entry.getCourse().getDepartment().getPrefix());
-            //Flowchart -> User
-            temp.getFlowchart().setId(entry.getFlowchart().getId());
-
-            // TODO: Just set user as current user in request.
-            temp.getFlowchart().getUser().setId(entry.getFlowchart().getUser().getId());
-//            temp.getFlowchart().getUser().setNumber(entry.getFlowchart().getUser().getNumber());
-//           temp.getFlowchart().getUser().setLname(entry.getFlowchart().getUser().getLname());
-//            temp.getFlowchart().getUser().setFname(entry.getFlowchart().getUser().getFname());
-            //Quarter
-            temp.getQuarter().setId(entry.getQuarter().getId());
-            temp.getQuarter().setTerm(entry.getQuarter().getTerm());
-            temp.getQuarter().setYear(entry.getQuarter().getYear());
-            //Save
-            entryRepository.save(temp);
-        }
+      entry.setId(id);
+      entryRepository.save(entry);
     }
 
     public void deleteEntry(Long id)

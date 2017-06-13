@@ -4,7 +4,6 @@ import base.security.jwt.JwtAuthenticationTokenFilter;
 import base.security.jwt.JwtAuthorizationExceptionHandler;
 import base.security.user.PolyPathUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -39,6 +38,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
           .authorizeRequests()
           .antMatchers(HttpMethod.GET, "/api/courses/**").permitAll() // to allow for course search
+          .antMatchers(HttpMethod.GET, "/api/quarters/**").permitAll() // to allow for quarters data
+          .antMatchers(HttpMethod.GET, "/api/flowcharts/official").permitAll() // to allow for quarters data
+          .antMatchers("/api/flowcharts/**/publish").hasRole("CATALOG_ADMIN")
           .antMatchers("/api/**").authenticated()  // We only need to protect the api routes
           .anyRequest().permitAll();
 

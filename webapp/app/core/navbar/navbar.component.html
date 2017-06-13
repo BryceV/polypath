@@ -1,11 +1,15 @@
 <md-toolbar>
+  <div class="d-block">
+    <!--<span class="logo-img"(click)="onLogoClicked()"></span>-->
+    <span>
+      <i *ngIf="user" class="fa fa-navicon fa-2x" style="margin-top: 13px;" (click)="onLogoClicked()"aria-hidden="true"></i>
+      </span>
+    <span class="navbar-title mt-1">PolyPath</span>
 
-  <span class="logo-img"(click)="onClick()"></span>
-  <span class="navbar-title">PolyPath</span>
-
-  <div *ngIf="currentUser$ | async as user" class="pull-right p-3">
-    <span class="text-gray-dark p-3">{{user.firstName}} {{user.lastName}}</span>
-    <button md-button (click)="onSignOut()">Sign Out</button>
+    <div *ngIf="user" class="pull-right p-3">
+      <span class="text-gray-dark p-3">{{user.firstName}} {{user.lastName}}</span>
+      <button md-button (click)="onSignOutClicked()">Sign Out</button>
+    </div>
   </div>
 
 </md-toolbar>

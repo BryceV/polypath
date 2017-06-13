@@ -1,20 +1,41 @@
+<div class="container sidenav">
+
 <button md-button
         class="float-right align-top md-small"
         style="z-index: 1"
         (click)="onSidebarClose()">
-  X
+  <i class="fa fa-minus" aria-hidden="true"></i>
 </button>
-<div></div>
-<div class="container sidenav">
-  <div class="sidenav-title">
+    <div class="sidenav-title">
       <span class="navbar-title">
-        <h4>Flowcharts</h4>
+        <h4>PolyPath</h4>
       </span>
-  </div>
-    <hr>
-    <div class="row justify-content-center p-1"
-         *ngFor="let flowchart of flowcharts"
-         (click)="onFlowchartSelected(flowchart.id)">
-      <button md-raised-button class="sidenav-button">{{flowchart.name}}</button>
     </div>
+  <div *ngIf="currentUser" >
+    <hr style="box-shadow: 0 10px 10px -10px #8c8b8b inset;">
+    <div class="sidenav-title mt-3">
+      <span class="navbar-title">
+        <h5 class="pl-1">Flowcharts</h5>
+      </span>
+    </div>
+    <div class="row justify-content-center">
+      <div class="btn-group-vertical mt-3 mb-2">
+        <!--TODO: set selected state on active button 'flowchart.id === selectedFlowchartId' -->
+          <button *ngFor="let flowchart of flowcharts"
+                  md-button
+                  class="sidenav-button"
+                  [class.activeButton]="selectedFlowchartId === flowchart.id"
+                  (click)="onFlowchartSelected(flowchart.id)">
+            {{flowchart.name}}
+          </button>
+      </div>
+    </div>
+    <!--<hr>-->
+    <div class="row justify-content-center p-1 mt-3">
+      <button md-raised-button
+              (click)="onNewFlowchart()">
+        Create New Flowchart
+      </button>
+    </div>
+  </div>
 </div>

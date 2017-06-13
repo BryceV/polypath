@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1026</x>
+      <y>405</y>
+      <w>297</w>
+      <h>297</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-Long id 
+-User_Role role
+-String firstName
+-String lastName
+-String email
+-String password
+-List&lt;Flowchart&gt; flowcharts
+--
++getId()
++setId(Long id)
++getFirstName()
++setFirstName(String firstName)
++getLastName()
++setLastName(String lastName)
++getEmail()
++setEmail(String email)
++getPassword()
++setPassword(String Password)
++getFlowcharts(): List&lt;Flowchart&gt; flowcharts
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>603</x>
+      <y>450</y>
+      <w>288</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>Flowchart
+--
+-Long id 
+-String name
+-User user
+-List&lt;Entry&gt; entries
+-Quarter qarter
+
+--
++getId()
++setId(Long id)
++getUser()
++setUser(User user)
++getName()
++setName(String name)
++getEntries() List&lt;entries&gt;
++setEntries(List&lt;Entry&gt; entries) 
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>27</x>
+      <y>18</y>
+      <w>270</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>Course
+--
+-Long id 
+-int number
+-String title
+-List&lt;entry&gt; entries
+-Department department
+
+--
++getId()
++setId(Long id)
++getNumber()
++setNumber(int number)
++getTitle()
++setTitle(String title)
++getDepartment()
++setDepartment(Department department)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>603</x>
+      <y>9</y>
+      <w>270</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>Entry
+--
+-Long: id 
+-Course course
+-String title
+-Flowchart flowchart
+-Quarter qarter
+
+--
++getId()
++setId(Long id)
++getCourses()
++setCourses(Course course)
++getFlowchart()
++setFlowchart(Flowchart flowchart)
++getQuarter()
++setQuarter(Quarter quarter)
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>27</x>
+      <y>351</y>
+      <w>234</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>Department
+--
+-Long id 
+-String prefix
+-List&lt;Course&gt; courses
+-Department department
+
+--
++getId()
++setId(Long id)
++getPrefix()
++setPrefix(String prefix)
++getCourses(): List&lt;Course&gt;
++setCourses(List&lt;Course&gt; courses)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>306</x>
+      <y>315</y>
+      <w>234</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>Quarter
+--
+-Long id 
+-Term term
+-int year
+-List&lt;Entry&gt; entries
+
+--
++getId()
++setId(Long id)
++getTerm()
++setTerm(Term term)
++getYear()
++setYear(int year)
++getEntries(): List&lt;Entry&gt; entries
+setEntries(List&lt;Entry&gt;)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1071</x>
+      <y>234</y>
+      <w>207</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;enumeration&gt;
+User_Role
+--
+STUDENT
+ADMIN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>342</x>
+      <y>621</y>
+      <w>162</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Term
+--
+FALL
+WINTER
+SPRING
+SUMMER</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>144</x>
+      <y>252</y>
+      <w>45</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=0...*
+m1=1</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1170</x>
+      <y>315</y>
+      <w>27</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>729</x>
+      <y>243</y>
+      <w>45</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=0...*
+m1=1</panel_attributes>
+    <additional_attributes>10.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>414</x>
+      <y>198</y>
+      <w>207</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=0...*
+m1=1</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0;210.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>135</y>
+      <w>333</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=0...*
+m1=1</panel_attributes>
+    <additional_attributes>10.0;10.0;350.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>414</x>
+      <y>531</y>
+      <w>27</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>882</x>
+      <y>567</y>
+      <w>162</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1
+m1=0...*</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,19 +1,23 @@
 .roundcorners {
   /*clear: both;*/
-  /*display: flex;*/
+  display: flex;
+  padding: 5px;
   border-radius: 5px;
-  background: #e6e6e6;
+  #background: #e6e6e6;
+  justify-content: center;
   border: 2px solid #000000;
-  width: 160px;
-  height: 120px;
-  box-shadow: 0px 1px 5px #a5a5a5; /*Activate on drop and drag */
+  min-width: 100px;
+  min-height: 100px;
+  box-shadow: 0px 1px 10px #a5a5a5; /*Activate on drop and drag */
   /*position: relative;*/
   margin: 3px;
+  position: relative;
 }
 
-.prettify-text {
+.text-center {
  color:black;
   font-size: 12px;
+  padding: 5px;
 }
 
 .button-postioning {
@@ -30,4 +34,14 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  color: lightgray;
+}
+
+.icon:hover {
+  color: black;
 }

@@ -1,17 +1,20 @@
 <md-sidenav-container fullscreen>
-  <app-navbar (onClicked)="onSideNavToggle()"></app-navbar>
+  <app-navbar *ngIf="currentUser$ | async"
+              [user]="currentUser$ | async"
+              (onLogoClick)="onSideNavToggle()"
+              (onSignOut)="onUserSignOut()">
+  </app-navbar>
+  <md-sidenav #sidenav>
+    <app-sidenav (flowchartSelected)="sidenav.close()"
+                 (sideNavClose)="sidenav.close()"
+                 (newFlowchart)="onNewFlowchart()"
+                 [currentUser]="currentUser$ | async"
+                 [flowcharts]="allFlowcharts$ | async"
+                 [selectedFlowchartId]="selectedFlowchartId$ | async">
+    </app-sidenav>
+  </md-sidenav>
 
-  <!--TODO: Make this conditionally toggle on current user-->
-  <!--<div *ngIf="currentUser$ | async">-->
-    <md-sidenav #sidenav (sideNavToggle)="sidenav.open()">
-      <app-sidenav (flowchartSelected)="sidenav.close()"
-                   (sideNavClose)="sidenav.close()"
-                    [flowcharts]="allFlowcharts$ | async">
-      </app-sidenav>
-    </md-sidenav>
-  <!--</div>-->
-
-  <div class="main-container d-flex mt-5 justify-content-center">
+  <!--<div class="main-container d-flex mt-1 justify-content-center">-->
     <router-outlet></router-outlet>
-  </div>
+  <!--</div>-->
 </md-sidenav-container>
