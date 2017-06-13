@@ -23,12 +23,8 @@
   </h3>
   <p> 
     There are two things that administrators can do that the typical user cannot do:
-    <li>
-      They can publish offical catalog flowcharts by creating/editing on of their flowcharts, clicking on the gear in the top  right corner, and selecting  "publish flowchart". This will push it into a special database that other users can query. 
-    </li>
-    <li>
-      They can view json representation of the course demand of specific quarters. It can be accessed by going to api/analytics/quarters/{id}
-    </li> 
+      * They can publish offical catalog flowcharts by creating/editing on of their flowcharts, clicking on the gear in the top right corner, and selecting  "publish flowchart". This will push it into a special database that other users can query. 
+      * They can view json representation of the course demand of specific quarters. It can be accessed by going to api/analytics/quarters/{id} 
   </p>
 </div>    
 
@@ -38,15 +34,13 @@
 
 <div>
   <h3> Course outcome (screen shots) </h3>
-    <li>
-      <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png">
-      </li>  
-![PPLogIn](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png)<br>
-![PPFlowchart](https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png)<br>
-![PPSideBar](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png)<br>
-![PPCourseSearc](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png)<br>
-![PPAdminGear](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png)<br>
-![PPAnalytics](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png)<br>
+    <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png">  
+    ![PPLogIn](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png)<br>
+    ![PPFlowchart](https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png)<br>
+    ![PPSideBar](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png)<br>
+    ![PPCourseSearc](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png)<br>
+    ![PPAdminGear](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png)<br>
+    ![PPAnalytics](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png)<br>
 </div>
 <div>
   <h4> Best things about Poly Path </h4>
