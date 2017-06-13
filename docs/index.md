@@ -1,4 +1,5 @@
-# How to run Poly Path
+# Poly Path
+> Poly path was created by Michel Crivello, Jonathan Pautz, Matthew Jimenez, Miguel Duran, and Bryce Vonilten in the Winter and Spring quarters of the 2016-17 Academic school year at Cal Poly San Luis Obispo. The two quarter course is Cal Poly's Software Engineering I and Software Engineering II and was taught by Professor Salome Gudrun Socher, who was a visiting professor from the Univeristy of Munich Applied Sciences. 
 
 # How to set up an administrator account
 
