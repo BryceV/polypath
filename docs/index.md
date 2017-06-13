@@ -6,11 +6,12 @@
 <div>
   <h3>Poly Path:</h3>
   <h4>Created for Efficiency and Usability</h4>
-  * Currently the Office of Registrar has to manally build the 200+ official flowcharts that contain Cal Poly's 64      major/concentration combinations. 
-  * The office of Registrar manually creates these 200+ flowcharts in Excel every three years when a new Academic Catalogue is introduced.
-  * With Poly Planner, the Office of Registrar
-     * Easily build new Official flowcharts from scratch or leverage existing official flowcharts.
-     * Perform basic data analytics and see the number of students taking a particular class in any given quarter
+  
+    * Currently the Office of Registrar has to manally build the 200+ official flowcharts that contain Cal Poly's 64      major/concentration combinations. 
+    * The office of Registrar manually creates these 200+ flowcharts in Excel every three years when a new Academic Catalogue is introduced.
+    * With Poly Planner, the Office of Registrar
+      * Easily build new Official flowcharts from scratch or leverage existing official flowcharts.
+      * Perform basic data analytics and see the number of students taking a particular class in any given quarter
 </div>
 
 <div>
