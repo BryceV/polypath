@@ -1,26 +1,8 @@
 <h1> Poly Path</h1>
 <div>
   <p> 
-    Poly path was created by Michel Crivello, Jonathan Pautz, Matthew Jimenez, Miguel Duran, and Bryce Vonilten in the Winter   and Spring quarters of the 2016-17 Academic school year at Cal Poly San Luis Obispo. The two quarter sequence is Cal Poly's   Software Engineering I (CSC 308) and Software Engineering II CSC(309) and was taught by Professor Salome Gudrun Socher, who   was a visiting professor from the Univeristy of Munich Applied Sciences. Professor Socher both brought a very realistic       stakeholder, who was the office of Registrar, and a professional approach to developing Software a various stages of the       Software Lifecycle.
+    Poly path was created by Michel Crivello, Jonathan Pautz, Matthew Jimenez, Miguel Duran, and Bryce Vonilten in the Winter   and Spring quarters of the 2016-17 Academic school year at Cal Poly San Luis Obispo. The two quarter sequence is Cal Poly's   Software Engineering I (CSC 308) and Software Engineering II CSC(309) and was taught by Professor Salome Gudrun Socher, who   was a visiting professor from the Univeristy of Munich Applied Sciences. Poly path is a tool to facilitate academic planning, both for the students and for the office of Registrar. 
   </p>
-  
-  <h4>Created for Efficiency and Usability</h4>
-    <li>
-      Currently the Office of Registrar has to manally build the 200+ official flowcharts that contain Cal Poly's 64                 major/concentration combinations. 
-    </li>
-    <li>
-      The office of Registrar manually creates these 200+ flowcharts in Excel every three years when a new Academic Catalogue       is introduced.
-    </li>
-    <li> 
-      With Poly Planner, the Office of Registrar
-        <li>
-          Easily build new Official flowcharts from scratch or leverage existing official flowcharts.
-        </li>  
-        <li>
-         Perform basic data analytics and see the number of students taking a particular class in any given quarter
-       </li>
-    </li>  
-</div>
 
 <div>
   <h3> 
@@ -53,37 +35,47 @@
   <h3> 
   <strong>Class diagrams</strong>
   </h3>
+    ![PPClassDiagram](https://github.com/cpe308-309/polypath/blob/master/docs/ClassDiagram/Updated_Class_Diagram.png)
 </div>  
 
 <div>
   <h3> 
     <strong>Course outcomes (screen shots)</strong>
   </h3>
-    <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png">  
+  
     <li>
-      ![PPLogIn](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png)
+      <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png"> 
     </li>
     <li>
-      ![PPFlowchart](https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png)
+      <img src="https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png">
     </li>  
     <li>
-      ![PPSideBar](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png)
+      <img src="(https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png">
     </li>
     <li>
-      ![PPCourseSearc](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png
+       <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png">
     </li>
     <li>!
-      [PPAdminGear](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png)
+     <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png">
     </li>
     <li>
-      ![PPAnalytics](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png)
+       <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAnalytics%20.png">
     </li>
 </div>
 
 <div>
-  <h3> 
-    <strong>Best things about Poly Path</strong> 
-  </h3>
+   <h4>The things that Poly Path does the best</h4>
+    <li>
+      Currently the Office of Registrar has to manally build 200+ official flowcharts in Excel every two years when a new Academic Catalogue is released. But now, with Poly Path, publishing official flowcharts is as easy as a few clicks. With quick access to a full course catalog, administrators can add/remove classes, drop and drag courses to their proper order, and release the new flowcharts. 
+    </li>
+    
+    <li>
+    These edited flowcharts are instantly available to be seen or used as a template for any user. Which gives many options for department heads to share flowcharts with the Registrar, or students to share their flowcharts with councilors to get advice. The possibilities are endless. 
+    </li>
+    
+    <li>
+     Admins can perform basic data analytics and see the number of students taking a particular class in any given quarter. This provides an excellent visual tool to plan course demand every quarter
+   </li>  
 </div>
 
 <div>
