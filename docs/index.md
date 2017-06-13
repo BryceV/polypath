@@ -30,9 +30,8 @@
 
 <div>
   <h3> 
-    <strong> How to use the administrator functionalities </strong>
+    <strong>How to use the administrator functionalities</strong>
   </h3>
-  <p> 
     <li>
       There are two things that administrators can do that the typical user cannot do:
         <li>
@@ -42,7 +41,6 @@
           They can view json representation of the course demand of specific quarters. It can be accessed by going to                   api/analytics/quarters/{id} 
         </li>
    </li>
- </p>
 </div>    
 
 <div>
