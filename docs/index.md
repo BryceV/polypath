@@ -39,7 +39,7 @@
   <h3> 
   <strong>Class diagrams</strong>
   </h3>
-   <img src="https://github.com/cpe308-309/polypath/blob/master/docs/ClassDiagram/Updated_Class_Diagram.png">
+   <img src="/docs/ClassDiagram/Updated_Class_Diagram.png">
 </div>  
 
 <div>
