@@ -81,5 +81,7 @@
 </div>
 
 <div>
-  <h4> Key learnings</h4> 
+  <h3> 
+    <strong>Key learnings</strong>
+  </h3> 
 </div>  
