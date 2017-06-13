@@ -6,7 +6,7 @@
   <h4>Created for Efficiency and Usability</h4>
     <li>
       Currently the Office of Registrar has to manally build the 200+ official flowcharts that contain Cal Poly's 64         major/concentration combinations. 
-    </li
+    </li>
     <li>
       The office of Registrar manually creates these 200+ flowcharts in Excel every three years when a new Academic Catalogue is introduced.
     </li>
