@@ -44,14 +44,22 @@
 </div>    
 
 <div>
-  <h3> Class diagrams </h3>
+  <h3> 
+  <strong>Class diagrams</strong>
+  </h3>
 </div>  
 
 <div>
-  <h3> Course outcome (screen shots) </h3>
+  <h3> 
+  <strong>Course outcome (screen shots)</strong>
+  </h3>
     <img src="https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png">  
-    ![PPLogIn](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png)<br>
-    ![PPFlowchart](https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png)<br>
+    <li>
+      ![PPLogIn](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathLogIn.png)
+    </li>
+    <li>
+      ![PPFlowchart](https://github.com/cpe308-309/polypath/blob/master/docs/FlowchartPage.png)
+    </li>  
     ![PPSideBar](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathSideBar.png)<br>
     ![PPCourseSearc](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathCourseSearch.png)<br>
     ![PPAdminGear](https://github.com/cpe308-309/polypath/blob/master/docs/PolyPathAdminGear.png)<br>
